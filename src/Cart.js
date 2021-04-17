@@ -4,7 +4,7 @@ import Input from "./Input.js";
 import Button from "./Button.js";
 
 const stripeLoadedPromise = loadStripe(
-  "pk_test_51HsqkCGuhXEITAut89vmc4jtjYd7XPs8hWfo2XPef15MFqI8rCFc8NqQU9WutlUBsd8kmNqHBeEmSrdMMpeEEyfT00KzeVdate"
+  "pk_test_51Ih4obSFADTqfKN8trkyw8jmmemV6WfjGjdcT0SLtXEsamBRg8sT2xSfuh6fH6PCf6ES3YE6a5DmvV8sIQYqoFmx00bmTqSDg2"
 );
 
 export default function Cart({ cart }) {
