@@ -75,10 +75,10 @@ export default function Cart({ cart }) {
                         />{" "}
                         {product.name}
                       </td>
-                      <td>${product.price}</td>
+                      <td>₹{product.price}</td>
                       <td>{product.quantity}</td>
                       <td>
-                        <strong>${product.price * product.quantity}</strong>
+                        <strong>₹{product.price * product.quantity}</strong>
                       </td>
                     </tr>
                   );
@@ -88,7 +88,7 @@ export default function Cart({ cart }) {
                 <tr>
                   <th colSpan="2"></th>
                   <th className="cart-highlight">Total</th>
-                  <th className="cart-highlight">${totalPrice}</th>
+                  <th className="cart-highlight">₹{totalPrice}</th>
                 </tr>
               </tfoot>
             </table>
