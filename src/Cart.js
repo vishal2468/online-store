@@ -27,8 +27,8 @@ export default function Cart({ cart }) {
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "https://react-tutorial.app/app.html",
-          cancelUrl: "https://react-tutorial.app/app.html",
+          successUrl: "https://www.vishalpoddar.ml/",
+          cancelUrl: "https://www.vishalpoddar.ml/",
           customerEmail: email,
         })
         .then((response) => {
