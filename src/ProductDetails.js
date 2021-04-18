@@ -36,6 +36,7 @@ export default function ProductDetails(props) {
     <div className="product-details-layout">
       <div>
         <h2>{product.name}</h2>
+        <div className="product-image-container">
         <img
           src={product.image}
           width="125"
@@ -48,6 +49,7 @@ export default function ProductDetails(props) {
             <div className="product-quantity">{quantity}</div>
           </div>
         )}
+      </div>
       </div>
       <div>
         <div className="tabs">
