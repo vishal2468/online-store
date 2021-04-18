@@ -24,6 +24,7 @@ export default function ProductDetails(props) {
       })
       .catch((error) => console.log("Could not load product details", error));
   }, []);
+  console.log(props.cart)
   const productFromCart = props.cart.find(
     (item) => item.id === params.id
   );
