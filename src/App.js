@@ -78,7 +78,7 @@ function App() {
             />
           </Route>
           <Route path="/products/:id">
-            <ProductDetails onProductAdd={handleProductAdd} />
+            <ProductDetails onProductAdd={handleProductAdd} cart={cart}/>
           </Route>
           <Route exact path="/cart">
             <Cart cart={cart} />

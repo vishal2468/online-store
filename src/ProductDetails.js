@@ -24,6 +24,10 @@ export default function ProductDetails(props) {
       })
       .catch((error) => console.log("Could not load product details", error));
   }, []);
+  const productFromCart = props.cart.find(
+    (product) => product.id === param.id
+  );
+  const quantity = productFromCart ? productFromCart.quantity : 0;
 
   return (
     <div className="product-details-layout">
@@ -36,6 +40,11 @@ export default function ProductDetails(props) {
           className="product-details-image"
           alt={product.name}
         />
+        {quantity > 0 && (
+          <div className="product-quantity-container">
+            <div className="product-quantity">{quantity}</div>
+          </div>
+        )}
       </div>
       <div>
         <div className="tabs">
