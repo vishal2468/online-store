@@ -27,7 +27,7 @@ export default function ProductDetails(props) {
   console.log(props.cart)
   console.log(params.id)
   const productFromCart = props.cart.find(
-    (item) => item.id === params.id
+    (item) => item.id === product.id
   );
   console.log(productFromCart)
   const quantity = productFromCart ? productFromCart.quantity : 0;
